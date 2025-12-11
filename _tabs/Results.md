@@ -30,31 +30,31 @@ order: 3
     <ul class="list-group">
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">[Llama 3.2 3B](https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Llama%203.2%203B)</span>
+        <a href="https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Llama%203.2%203B" class="mx-2">Llama 3.2 3B</a>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">Llama 3.2 3B Finetuned</span>
+        <a [href="/results/two-agent/llama-3-2-3b-ft](https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Llama%203.3%2070B%20Finetuned)" class="mx-2">Llama 3.2 3B Finetuned</a>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">Qwen 3 32B Finetuned</span>
+        <a href="[/results/two-agent/qwen-3-32b-ft](https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Qwen%203%2032B%20Finetuned)" class="mx-2">Qwen 3 32B Finetuned</a>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">Llama 3.3 70B</span>
+        <a href="https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Llama%203.3%2070B%20Results" class="mx-2">Llama 3.3 70B</a>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">Llama 3.3 70B Finetuned</span>
+        <a href="https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Llama%203.3%2070B%20Finetuned" class="mx-2">Llama 3.3 70B Finetuned</a>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">GPT-OSS 120B</span>
+        <a href="https://github.com/fenics-llm/Results_ALL-FEM/tree/main/GPT-OSS" class="mx-2">GPT-OSS 120B</a>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">GPT-OSS 120B Finetuned</span>
+        <a href="https://github.com/fenics-llm/Results_ALL-FEM/tree/main/GPT-OSS%20Finetuned" class="mx-2">GPT-OSS 120B Finetuned</a>
       </li>
     </ul>
   </div>
@@ -67,7 +67,6 @@ order: 3
       <i class="far fa-folder-open fa-fw"></i>
       <span class="mx-2">Multi-Agent framework</span>
       <span class="text-muted small font-weight-light">
-        X models
       </span>
     </span>
 
@@ -83,24 +82,34 @@ order: 3
 
   <div id="l_1" class="collapse show" aria-expanded="true">
     <ul class="list-group">
-      <!-- put the model names you want here as <li> items, same style as above -->
+      <!-- Example entries -->
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/results/multi-agent/gpt-oss-120b" class="mx-2">GPT-OSS 120B (Multi-Agent)</a>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/results/multi-agent/gpt-oss-120b-ft" class="mx-2">GPT-OSS 120B Finetuned (Multi-Agent)</a>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/results/multi-agent/llama-3-3-70b-ft" class="mx-2">Llama 3.3 70B Finetuned (Multi-Agent)</a>
+      </li>
     </ul>
   </div>
 </div>
 
-<!-- GPT-5 -->
 <div class="card categories mt-3">
-  <div id="h_2" class="card-header d-flex justify-content-between hide-border-bottom">
+  <div id="h_1" class="card-header d-flex justify-content-between hide-border-bottom">
     <span class="ms-2">
       <i class="far fa-folder-open fa-fw"></i>
       <span class="mx-2">GPT-5</span>
       <span class="text-muted small font-weight-light">
-        1 model
       </span>
     </span>
 
     <a
-      href="#l_2"
+      href="#l_1"
       data-bs-toggle="collapse"
       aria-expanded="true"
       class="category-trigger hide-border-bottom"
@@ -109,12 +118,22 @@ order: 3
     </a>
   </div>
 
-  <div id="l_2" class="collapse show" aria-expanded="true">
+  <div id="l_1" class="collapse show" aria-expanded="true">
     <ul class="list-group">
+      <!-- Example entries -->
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <span class="mx-2">GPT-5 Thinking</span>
+        <a href="/results/multi-agent/gpt-oss-120b" class="mx-2">GPT-OSS 120B (Multi-Agent)</a>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/results/multi-agent/gpt-oss-120b-ft" class="mx-2">GPT-OSS 120B Finetuned (Multi-Agent)</a>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <a href="/results/multi-agent/llama-3-3-70b-ft" class="mx-2">Llama 3.3 70B Finetuned (Multi-Agent)</a>
       </li>
     </ul>
   </div>
 </div>
+
