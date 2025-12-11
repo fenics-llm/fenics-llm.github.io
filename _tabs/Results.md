@@ -1,128 +1,120 @@
 ---
+layout: page
+title: Results
 icon: fas fa-folder-open
 order: 3
 ---
 
-# Results_ALL-FEM repository
+<!-- Two-Agent framework -->
+<div class="card categories">
+  <div id="h_0" class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="far fa-folder-open fa-fw"></i>
+      <span class="mx-2">Two-Agent framework</span>
+      <span class="text-muted small font-weight-light">
+        7 models
+      </span>
+    </span>
 
-<div id="repo-browser">
-  Loading repository contents...
+    <a
+      href="#l_0"
+      data-bs-toggle="collapse"
+      aria-expanded="true"
+      class="category-trigger hide-border-bottom"
+    >
+      <i class="fas fa-fw fa-angle-down"></i>
+    </a>
+  </div>
+
+  <div id="l_0" class="collapse show" aria-expanded="true">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">Llama 3.2 3B</span>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">Llama 3.2 3B Finetuned</span>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">Qwen 3 32B Finetuned</span>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">Llama 3.3 70B</span>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">Llama 3.3 70B Finetuned</span>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">GPT-OSS 120B</span>
+      </li>
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">GPT-OSS 120B Finetuned</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<script>
-  (function () {
-    var container = document.getElementById("repo-browser");
+<!-- Multi-Agent framework -->
+<div class="card categories mt-3">
+  <div id="h_1" class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="far fa-folder-open fa-fw"></i>
+      <span class="mx-2">Multi-Agent framework</span>
+      <span class="text-muted small font-weight-light">
+        X models
+      </span>
+    </span>
 
-    function showError(msg) {
-      container.textContent = msg;
-    }
+    <a
+      href="#l_1"
+      data-bs-toggle="collapse"
+      aria-expanded="true"
+      class="category-trigger hide-border-bottom"
+    >
+      <i class="fas fa-fw fa-angle-down"></i>
+    </a>
+  </div>
 
-    function createEntryElement(item, parentPath) {
-      var li = document.createElement("li");
-      var fullPath = parentPath ? parentPath + "/" + item.name : item.name;
+  <div id="l_1" class="collapse show" aria-expanded="true">
+    <ul class="list-group">
+      <!-- put the model names you want here as <li> items, same style as above -->
+    </ul>
+  </div>
+</div>
 
-      if (item.type === "dir") {
-        var toggle = document.createElement("span");
-        toggle.textContent = "📁 " + item.name;
-        toggle.style.cursor = "pointer";
-        toggle.style.fontWeight = "600";
+<!-- GPT-5 -->
+<div class="card categories mt-3">
+  <div id="h_2" class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="far fa-folder-open fa-fw"></i>
+      <span class="mx-2">GPT-5</span>
+      <span class="text-muted small font-weight-light">
+        1 model
+      </span>
+    </span>
 
-        var childrenContainer = document.createElement("ul");
-        childrenContainer.style.listStyleType = "none";
-        childrenContainer.style.marginLeft = "1.2rem";
-        childrenContainer.style.display = "none";
+    <a
+      href="#l_2"
+      data-bs-toggle="collapse"
+      aria-expanded="true"
+      class="category-trigger hide-border-bottom"
+    >
+      <i class="fas fa-fw fa-angle-down"></i>
+    </a>
+  </div>
 
-        toggle.addEventListener("click", function () {
-          if (childrenContainer.dataset.loaded === "true") {
-            childrenContainer.style.display =
-              childrenContainer.style.display === "none" ? "block" : "none";
-            return;
-          }
-
-          childrenContainer.textContent = "Loading...";
-          fetch("https://api.github.com/repos/fenics-llm/Results_ALL-FEM/contents/" + fullPath)
-            .then(function (response) {
-              if (!response.ok) {
-                throw new Error("HTTP " + response.status);
-              }
-              return response.json();
-            })
-            .then(function (contents) {
-              childrenContainer.textContent = "";
-              contents
-                .sort(function (a, b) {
-                  if (a.type !== b.type) return a.type === "dir" ? -1 : 1;
-                  return a.name.localeCompare(b.name);
-                })
-                .forEach(function (child) {
-                  childrenContainer.appendChild(createEntryElement(child, fullPath));
-                });
-              childrenContainer.dataset.loaded = "true";
-              childrenContainer.style.display = "block";
-            })
-            .catch(function (err) {
-              childrenContainer.textContent = "Error loading folder: " + err.message;
-              console.error(err);
-            });
-        });
-
-        li.appendChild(toggle);
-        li.appendChild(childrenContainer);
-      } else if (item.type === "file") {
-        var link = document.createElement("a");
-        link.textContent = "📄 " + item.name;
-        link.href = item.html_url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        li.appendChild(link);
-      } else {
-        li.textContent = item.type + ": " + item.name;
-      }
-
-      return li;
-    }
-
-    function loadRoot() {
-      container.textContent = "Loading repository contents...";
-
-      fetch("https://api.github.com/repos/fenics-llm/Results_ALL-FEM/contents")
-        .then(function (response) {
-          if (!response.ok) {
-            throw new Error("HTTP " + response.status);
-          }
-          return response.json();
-        })
-        .then(function (data) {
-          var list = document.createElement("ul");
-          list.style.listStyleType = "none";
-          list.style.paddingLeft = "0";
-
-          data
-            .sort(function (a, b) {
-              if (a.type !== b.type) return a.type === "dir" ? -1 : 1;
-              return a.name.localeCompare(b.name);
-            })
-            .forEach(function (item) {
-              list.appendChild(createEntryElement(item, ""));
-            });
-
-          container.textContent = "";
-          container.appendChild(list);
-
-          var note = document.createElement("p");
-          note.style.fontSize = "0.8rem";
-          note.style.marginTop = "0.5rem";
-          note.textContent =
-            "Click folders to expand; files open on GitHub in a new tab.";
-          container.appendChild(note);
-        })
-        .catch(function (err) {
-          showError("Failed to load repository contents: " + err.message);
-          console.error(err);
-        });
-    }
-
-    // Run immediately (no need to wait for DOMContentLoaded because the script is after the div)
-    loadRoot();
-  })();
-</script>
+  <div id="l_2" class="collapse show" aria-expanded="true">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <i class="far fa-folder fa-fw"></i>
+        <span class="mx-2">GPT-5 Thinking</span>
+      </li>
+    </ul>
+  </div>
+</div>
