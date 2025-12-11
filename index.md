@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ALL-FEM : Agentic Large Language models Fine-tuned for Finite Element Methods
+title: ALL FEM-Agentic Large Language models Fine-tuned for Finite Element Methods
 permalink: /
 ---
 
