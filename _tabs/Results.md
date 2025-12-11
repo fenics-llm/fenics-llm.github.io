@@ -4,19 +4,10 @@ title: Results
 icon: fas fa-folder-open
 order: 3
 ---
-#hello
-Below you can browse the main result groups for our experiments.  
-Click on a row to see the details page for that model (links are placeholders â€“ adjust paths to match your site structure).
 
-<!-- =========================
-     Two-Agent framework
-========================= -->
-
+<!-- Two-Agent framework -->
 <div class="card categories">
-  <div
-    id="h_0"
-    class="card-header d-flex justify-content-between hide-border-bottom"
-  >
+  <div id="h_0" class="card-header d-flex justify-content-between hide-border-bottom">
     <span class="ms-2">
       <i class="far fa-folder-open fa-fw"></i>
       <span class="mx-2">Two-Agent framework</span>
@@ -39,50 +30,44 @@ Click on a row to see the details page for that model (links are placeholders â€
     <ul class="list-group">
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/llama-3-2-3b" class="mx-2">Llama 3.2 3B</a>
+        <span class="mx-2">[Llama 3.2 3B](https://github.com/fenics-llm/Results_ALL-FEM/tree/main/Llama%203.2%203B)</span>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/llama-3-2-3b-ft" class="mx-2">Llama 3.2 3B Finetuned</a>
+        <span class="mx-2">Llama 3.2 3B Finetuned</span>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/qwen-3-32b-ft" class="mx-2">Qwen 3 32B Finetuned</a>
+        <span class="mx-2">Qwen 3 32B Finetuned</span>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/llama-3-3-70b" class="mx-2">Llama 3.3 70B</a>
+        <span class="mx-2">Llama 3.3 70B</span>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/llama-3-3-70b-ft" class="mx-2">Llama 3.3 70B Finetuned</a>
+        <span class="mx-2">Llama 3.3 70B Finetuned</span>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/gpt-oss-120b" class="mx-2">GPT-OSS 120B</a>
+        <span class="mx-2">GPT-OSS 120B</span>
       </li>
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/two-agent/gpt-oss-120b-ft" class="mx-2">GPT-OSS 120B Finetuned</a>
+        <span class="mx-2">GPT-OSS 120B Finetuned</span>
       </li>
     </ul>
   </div>
 </div>
 
-<!-- =========================
-     Multi-Agent framework
-========================= -->
-
+<!-- Multi-Agent framework -->
 <div class="card categories mt-3">
-  <div
-    id="h_1"
-    class="card-header d-flex justify-content-between hide-border-bottom"
-  >
+  <div id="h_1" class="card-header d-flex justify-content-between hide-border-bottom">
     <span class="ms-2">
       <i class="far fa-folder-open fa-fw"></i>
       <span class="mx-2">Multi-Agent framework</span>
       <span class="text-muted small font-weight-light">
-        3 models
+        X models
       </span>
     </span>
 
@@ -98,31 +83,14 @@ Click on a row to see the details page for that model (links are placeholders â€
 
   <div id="l_1" class="collapse show" aria-expanded="true">
     <ul class="list-group">
-      <li class="list-group-item">
-        <i class="far fa-folder fa-fw"></i>
-        <a href="/results/multi-agent/gpt-oss-120b" class="mx-2">GPT-OSS 120B (Multi-Agent)</a>
-      </li>
-      <li class="list-group-item">
-        <i class="far fa-folder fa-fw"></i>
-        <a href="/results/multi-agent/gpt-oss-120b-ft" class="mx-2">GPT-OSS 120B Finetuned (Multi-Agent)</a>
-      </li>
-      <li class="list-group-item">
-        <i class="far fa-folder fa-fw"></i>
-        <a href="/results/multi-agent/llama-3-3-70b-ft" class="mx-2">Llama 3.3 70B Finetuned (Multi-Agent)</a>
-      </li>
+      <!-- put the model names you want here as <li> items, same style as above -->
     </ul>
   </div>
 </div>
 
-<!-- =========================
-     GPT-5 baseline
-========================= -->
-
+<!-- GPT-5 -->
 <div class="card categories mt-3">
-  <div
-    id="h_2"
-    class="card-header d-flex justify-content-between hide-border-bottom"
-  >
+  <div id="h_2" class="card-header d-flex justify-content-between hide-border-bottom">
     <span class="ms-2">
       <i class="far fa-folder-open fa-fw"></i>
       <span class="mx-2">GPT-5</span>
@@ -145,7 +113,7 @@ Click on a row to see the details page for that model (links are placeholders â€
     <ul class="list-group">
       <li class="list-group-item">
         <i class="far fa-folder fa-fw"></i>
-        <a href="/results/gpt-5/thinking" class="mx-2">GPT-5 Thinking</a>
+        <span class="mx-2">GPT-5 Thinking</span>
       </li>
     </ul>
   </div>
