@@ -17,8 +17,7 @@ Finite element analysis guides the design, verification and certification of nea
 
 If you use our models or dataset, please cite our work:
 
-```markdown
-If you use our models or framework, please cite our work:
+
 
 {% highlight bibtex %}
 @misc{deotale2026allfemagenticlargelanguage,
