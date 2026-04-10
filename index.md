@@ -15,7 +15,7 @@ Finite element analysis guides the design, verification and certification of nea
 
 **Read the full paper on arXiv:** [https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011)
 
-If you use our models or dataset, please cite our work:
+If you use our models or dataset, please consider citing our work:
 
 
 
