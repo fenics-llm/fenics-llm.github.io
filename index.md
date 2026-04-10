@@ -17,7 +17,10 @@ Finite element analysis guides the design, verification and certification of nea
 
 If you use our models or dataset, please cite our work:
 
-```bibtex
+```markdown
+If you use our models or framework, please cite our work:
+
+{% highlight bibtex %}
 @misc{deotale2026allfemagenticlargelanguage,
       title={ALL-FEM: Agentic Large Language models Fine-tuned for Finite Element Methods}, 
       author={Rushikesh Deotale and Adithya Srinivasan and Yuan Tian and Tianyi Zhang and Pavlos Vlachos and Hector Gomez},
@@ -25,5 +28,6 @@ If you use our models or dataset, please cite our work:
       eprint={2603.21011},
       archivePrefix={arXiv},
       primaryClass={cs.CE},
-      url={[https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011)}, 
+      url={https://arxiv.org/abs/2603.21011}, 
 }
+{% endhighlight %}
