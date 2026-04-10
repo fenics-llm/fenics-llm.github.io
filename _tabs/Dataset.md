@@ -9,4 +9,4 @@ To expand this dataset, contributors are encouraged to submit their code in Alpa
 
 All submissions can be viewed [here](https://docs.google.com/spreadsheets/d/1K8bVcHrFpCxhNhJUcs10XGnyKd3wtjni5zCEg5v9i58/edit?usp=sharing).
 
-> **Note:** If you find this database useful in your research or projects, please consider [citing](https://arxiv.org/abs/2603.21011) our work.
+> **Note:** If you find this database useful in your research or projects, please consider [citing](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826) our work.
