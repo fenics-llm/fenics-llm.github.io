@@ -13,14 +13,9 @@ Finite element analysis guides the design, verification and certification of nea
 
 ### Citation
 
-**Read the full paper on SSRN or arXiv:** [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826), [https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011)
+**Read the full paper on arXiv or SSRN:**[https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011), [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826)
 
 If you use our models or dataset, please consider citing our work:
-
-{% highlight bibtex %}
-Deotale, Rushikesh and Srinivasan, Adithya and Tian, Yuan and Zhang, Tianyi and Vlachos, Pavlos and Gomez, Hector, ALL-FEM: Agentic Large Language models Fine-tuned for Finite Element Methods (January 08, 2026). Available at SSRN: https://ssrn.com/abstract=6103826 or http://dx.doi.org/10.2139/ssrn.6103826
-{% endhighlight %}
-
 {% highlight bibtex %}
 @misc{deotale2026allfemagenticlargelanguage,
       title={ALL-FEM: Agentic Large Language models Fine-tuned for Finite Element Methods}, 
