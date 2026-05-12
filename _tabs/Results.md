@@ -119,3 +119,25 @@ order: 3
   </div>
   -->
 </div>
+<!-- GPT-5 -->
+<div class="card categories mt-3">
+  <div id="h_1" class="card-header d-flex justify-content-between hide-border-bottom">
+    <span class="ms-2">
+      <i class="far fa-folder-open fa-fw"></i>
+      <span class="mx-2">
+        <a href="https://github.com/fenics-llm/Results_ALL-FEM/tree/main/reference%20solutions">Reference Solutions</a>
+      </span>
+      <span class="text-muted small font-weight-light">
+      </span>
+    </span>
+    <!-- dropdown removed since nothing below -->
+  </div>
+  <!-- you can either leave this out completely, or keep a placeholder -->
+  <!--
+  <div id="l_1">
+    <ul class="list-group">
+      <li class="list-group-item text-muted">Coming soon</li>
+    </ul>
+  </div>
+  -->
+</div>
