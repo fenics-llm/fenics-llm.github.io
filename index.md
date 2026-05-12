@@ -13,17 +13,30 @@ Finite element analysis guides the design, verification and certification of nea
 
 ### Citation
 
-**Read the full paper on arXiv or SSRN:**[https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011), [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6103826)
-
+**Read the full paper on arXiv:**[https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011)
 If you use our models or dataset, please consider citing our work:
 {% highlight bibtex %}
-@misc{deotale2026allfemagenticlargelanguage,
-      title={ALL-FEM: Agentic Large Language models Fine-tuned for Finite Element Methods}, 
-      author={Rushikesh Deotale and Adithya Srinivasan and Yuan Tian and Tianyi Zhang and Pavlos Vlachos and Hector Gomez},
-      year={2026},
-      eprint={2603.21011},
-      archivePrefix={arXiv},
-      primaryClass={cs.CE},
-      url={https://arxiv.org/abs/2603.21011}, 
-}
+@article{DEOTALE2026118985,
+title = {ALL-FEM: Agentic Large Language Models fine-tuned for finite element methods},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {457},
+pages = {118985},
+year = {2026},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2026.118985},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782526002586},
+author = {Rushikesh Deotale and Adithya Srinivasan and Mahmoud Golestanian and Yuan Tian and Tianyi Zhang and Pavlos Vlachos and Hector Gomez},
+keywords = {FEA, LLMs, Agentic AI, FEniCS},
+abstract = {Finite element (FE) analysis guides the design and verification of nearly all manufactured objects. It is at the core of computational engineering, enabling simulation of complex physical systems, from fluids and solids to multiphysics systems. However, implementing FE codes and analyzing simulation results demands expertise across numerical analysis, continuum mechanics, and programming. Conventional Large Language Models (LLMs) can generate FE code, but they hallucinate, lack awareness of variational structures, and cannot close the loop from problem statement to a verified solution. Here, we propose ALL-FEM, an autonomous simulation system that integrates agentic AI with domain-specific, fine-tuned LLMs for FEniCS code generation across solid, fluid, and multiphysics applications. We construct a corpus of 1000＋ verified FEniCS scripts by combining 500＋ curated expert codes with a retrieval-augmented, multi-LLM pipeline that generates and filters codes for diverse PDEs, geometries, and boundary conditions. We used the corpus to fine-tune LLMs with 3B to 120B parameters. Our agentic framework orchestrates specialized agents, powered by fine-tuned LLMs, to formulate problems as PDEs, generate and debug code and visualize the results. We evaluated the system on 39 benchmarks that include problems of linear/nonlinear elasticity, plasticity, Newtonian/non-Newtonian flow, thermofluids, fluid–structure interaction, phase separation, and transport on moving domains. Embedded in a multi-agent workflow with runtime feedback, the best fine-tuned model (GPT OSS 120B) achieves code-level success of 71.79%, outperforming a non-agentic deployment of GPT 5 Thinking. By showing that relatively small, fine-tuned LLMs, orchestrated through agentic frameworks, can automate FE workflows, ALL-FEM offers a blueprint for autonomous simulation systems in computational science and engineering.}@article{DEOTALE2026118985,
+title = {ALL-FEM: Agentic Large Language Models fine-tuned for finite element methods},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+volume = {457},
+pages = {118985},
+year = {2026},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2026.118985},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782526002586},
+author = {Rushikesh Deotale and Adithya Srinivasan and Mahmoud Golestanian and Yuan Tian and Tianyi Zhang and Pavlos Vlachos and Hector Gomez},
+keywords = {FEA, LLMs, Agentic AI, FEniCS},
+abstract = {Finite element (FE) analysis guides the design and verification of nearly all manufactured objects. It is at the core of computational engineering, enabling simulation of complex physical systems, from fluids and solids to multiphysics systems. However, implementing FE codes and analyzing simulation results demands expertise across numerical analysis, continuum mechanics, and programming. Conventional Large Language Models (LLMs) can generate FE code, but they hallucinate, lack awareness of variational structures, and cannot close the loop from problem statement to a verified solution. Here, we propose ALL-FEM, an autonomous simulation system that integrates agentic AI with domain-specific, fine-tuned LLMs for FEniCS code generation across solid, fluid, and multiphysics applications. We construct a corpus of 1000＋ verified FEniCS scripts by combining 500＋ curated expert codes with a retrieval-augmented, multi-LLM pipeline that generates and filters codes for diverse PDEs, geometries, and boundary conditions. We used the corpus to fine-tune LLMs with 3B to 120B parameters. Our agentic framework orchestrates specialized agents, powered by fine-tuned LLMs, to formulate problems as PDEs, generate and debug code and visualize the results. We evaluated the system on 39 benchmarks that include problems of linear/nonlinear elasticity, plasticity, Newtonian/non-Newtonian flow, thermofluids, fluid–structure interaction, phase separation, and transport on moving domains. Embedded in a multi-agent workflow with runtime feedback, the best fine-tuned model (GPT OSS 120B) achieves code-level success of 71.79%, outperforming a non-agentic deployment of GPT 5 Thinking. By showing that relatively small, fine-tuned LLMs, orchestrated through agentic frameworks, can automate FE workflows, ALL-FEM offers a blueprint for autonomous simulation systems in computational science and engineering.}
 {% endhighlight %}
