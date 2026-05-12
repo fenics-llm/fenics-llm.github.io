@@ -14,7 +14,7 @@ Finite element analysis guides the design, verification and certification of nea
 ### Citation
 
 **Read the full paper on arXiv:**[https://arxiv.org/abs/2603.21011](https://arxiv.org/abs/2603.21011)
-If you use our models or dataset, please consider citing our work:
+If you use our models, dataset or benchmarking problems, please consider citing our work:
 {% highlight bibtex %}
 @article{DEOTALE2026118985,
 title = {ALL-FEM: Agentic Large Language Models fine-tuned for finite element methods},
